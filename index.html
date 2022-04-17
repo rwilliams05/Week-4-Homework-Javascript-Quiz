@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Javascript Quiz</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <main>
+        <div id="start" style="text-align:center;">   
+            <h1>Javascript Quiz</h1>
+            <h2> Click the button to start</h2>
+             <button id= "start-button">Start the Quiz</button>
+        </div>
+        <div id="quiz" style="text-align:center;"style="display: none">
+
+            <div id="question"></div>
+
+
+            <div id="choices">
+
+                <div class="option" id="1" onclick="checkAnswer('1')"></div>
+                
+                <div class="option" id="2" onclick="checkAnswer('2')"></div>
+
+                <div class="option" id="3" onclick="checkAnswer('3')"></div>
+
+                <div class="option" id="4" onclick="checkAnswer('4')"></div>
+
+            </div>
+           
+            <div id="rightWrong"></div>
+
+            <div id="timer"> </div>
+
+
+        </div>
+
+        <div id="scoreContainers" style="display: none"></div>
+
+        
+        <script src="script.js"></script>
+    </main>    
+
+</body>
+
+</html>
